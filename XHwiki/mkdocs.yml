@@ -1,0 +1,6 @@
+site_name: 星海wiki
+theme:
+  name: 'material'
+nav:
+  - 首页: index.md
+  - 简介: introduction.md
