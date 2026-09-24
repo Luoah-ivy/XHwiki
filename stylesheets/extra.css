@@ -1,0 +1,6 @@
+/* 让所有视频元素在块级容器中居中 */
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
