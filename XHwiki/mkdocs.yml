@@ -1,6 +1,68 @@
 site_name: 星海wiki
+site_url: https://luoah-ivy.github.io/XHwiki/
+repo_url: https://github.com/luoah-ivy/XHwiki
+repo_name: luoah-ivy/XHwiki
 theme:
   name: 'material'
+  language: zh
+  custom_dir: overrides
+  icon:
+    logo: material/star-shooting
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: 切换到夜间模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/lightbulb
+        name: 切换到明亮模式
+plugins:
+  - search
+  - mkdocs-video:
+      is_video: True
+      video_autoplay: False
+  - git-revision-date-localized:
+      type: date
+      locale: zh
+      fallback_to_build_date: true
+  - encryptcontent:
+      password_inventory:
+        admin_level:
+          Luoah: 'wohuainiandeshijueduichire'
+          admin: '12345678'
+        guest_level:
+          Luoah: 'wohuainiandeshijueduichire'
+          admin: '12345678'
+          guest: '123456'
+      title_prefix: '[加密]'
+      summary: '此内容已使用 AES 加密。'
+      placeholder: '请输入密码'
+      placeholder_user: '君の名は'
+      decryption_failure_message: '此用户不存在或密码错误，如果正确填入依然无法访问，请联系管理员获取访问权限。'
+      encryption_info_message: '因为部分同学恶意传播本网站或进行各种恶意活动，Luoah于2026.10.1正式加入AES加密系统。即2026.10.1日起，部分页面的访问针对部分没有权限的用户进行部分限制。注：Luoah不是日本人，“君の名は”指的是“你的名字”。'
+      password_button_text: '解锁'
+  - minify
+markdown_extensions:
+  - attr_list
+extra_css:
+  - stylesheets/extra.css
+not_in_nav: |
+  index.md
+  login.md
 nav:
-  - 首页: index.md
-  - 简介: introduction.md
+  - XHwiki:
+    - 简介: Home/introduction.md
+  - 同学:
+    - 金仕杰: Students/25.md
+    - 卢润坤: Students/29.md
+  - 梗:
+    - 喝大了: Meme/HDL.md
+    - 酸臭: Meme/SC.md
+    - 5.28世界上会有一个非常非常幸福的女孩: Meme/DLL528.md
+    - 好兄弟一辈子: Meme/Bro.md
+    - 老好人/老傻子: Meme/LHRorLSZ.md

@@ -1,0 +1,208 @@
+﻿{% extends "main.html" %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'stylesheets/home.css' | url }}">
+{% endblock %}
+
+{% block content %}
+<div class="haavk-home">
+
+  <header class="haavk-hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-grid"></div>
+    <div class="hero-scanline"></div>
+    <div class="hero-content">
+      <div class="hero-mark">
+        <span class="mark-dot"></span>
+        HAAVK // XHwiki
+        <span class="mark-dot"></span>
+      </div>
+      <h1 class="hero-title">星海 Wiki</h1>
+      <p class="hero-sub">
+        <span id="typewriter"></span><span class="cursor">_</span>
+      </p>
+      <div class="hero-actions">
+        <a href="{{ 'Home/introduction/' | url }}" class="btn-primary">
+          <span class="btn-label">进入系统</span>
+          <span class="btn-shine"></span>
+        </a>
+        <a href="{{ 'login/' | url }}" class="btn-ghost">
+          <span class="btn-label">登录</span>
+          <span class="btn-shine"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="haavk-modules">
+    <a href="{{ 'Home/introduction/' | url }}" class="module-card">
+      <span class="corner-tl"></span><span class="corner-br"></span>
+      <span class="module-tag">01 / PROFILE</span>
+      <h3>XHwiki 简介</h3>
+      <p>组织背景与目标概要</p>
+    </a>
+    <a href="{{ 'Students/25/' | url }}" class="module-card">
+      <span class="corner-tl"></span><span class="corner-br"></span>
+      <span class="module-tag">02 / PERSONNEL</span>
+      <h3>同学录</h3>
+      <p>在册人员档案索引</p>
+    </a>
+    <a href="{{ 'login/' | url }}" class="module-card">
+      <span class="corner-tl"></span><span class="corner-br"></span>
+      <span class="module-tag">03 / ACCESS</span>
+      <h3>登录</h3>
+      <p>获取加密内容访问权限</p>
+    </a>
+  </section>
+
+  <footer class="haavk-status">
+    <span><i class="status-dot"></i> STATUS: ONLINE</span>
+    <span>NODE: XHwiki</span>
+    <span>ENCRYPTION: AES-256</span>
+  </footer>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+  /* ===== 打字机效果 ===== */
+  (function() {
+    const el = document.getElementById('typewriter');
+    if (!el) return;
+    const phrases = [
+      '信息予你无限 · relink重塑未来',
+      'WELCOME TO XHwiki',
+      'SYSTEM READY · 数据已同步',
+      '用代码记录我们的星海'
+    ];
+    let phraseIdx = 0, charIdx = 0, deleting = false;
+
+    function tick() {
+      const current = phrases[phraseIdx];
+      if (!deleting) {
+        el.textContent = current.slice(0, ++charIdx);
+        if (charIdx === current.length) {
+          deleting = true;
+          setTimeout(tick, 2200);
+          return;
+        }
+        setTimeout(tick, 80);
+      } else {
+        el.textContent = current.slice(0, --charIdx);
+        if (charIdx === 0) {
+          deleting = false;
+          phraseIdx = (phraseIdx + 1) % phrases.length;
+          setTimeout(tick, 400);
+          return;
+        }
+        setTimeout(tick, 40);
+      }
+    }
+    setTimeout(tick, 500);
+  })();
+
+  /* ===== 粒子背景 ===== */
+  (function() {
+    const canvas = document.getElementById('particle-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const hero = canvas.parentElement;
+    let particles = [], mouse = { x: null, y: null };
+    const PARTICLE_COUNT = 60;
+    const MAX_DIST = 130;
+    const COLOR = '99, 102, 241';
+
+    function resize() {
+      canvas.width = hero.offsetWidth;
+      canvas.height = hero.offsetHeight;
+    }
+
+    function init() {
+      particles = [];
+      for (let i = 0; i < PARTICLE_COUNT; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 0.4,
+          vy: (Math.random() - 0.5) * 0.4,
+          r: Math.random() * 1.8 + 0.8
+        });
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${COLOR}, 0.7)`;
+        ctx.fill();
+      });
+
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < MAX_DIST) {
+            const alpha = (1 - dist / MAX_DIST) * 0.35;
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(${COLOR}, ${alpha})`;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      }
+
+      if (mouse.x !== null) {
+        particles.forEach(p => {
+          const dx = p.x - mouse.x;
+          const dy = p.y - mouse.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 180) {
+            const alpha = (1 - dist / 180) * 0.5;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.strokeStyle = `rgba(${COLOR}, ${alpha})`;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        });
+      }
+
+      requestAnimationFrame(draw);
+    }
+
+    hero.addEventListener('mousemove', e => {
+      const rect = hero.getBoundingClientRect();
+      mouse.x = e.clientX - rect.left;
+      mouse.y = e.clientY - rect.top;
+    });
+    hero.addEventListener('mouseleave', () => {
+      mouse.x = null;
+      mouse.y = null;
+    });
+
+    window.addEventListener('resize', () => {
+      resize();
+      init();
+    });
+
+    resize();
+    init();
+    draw();
+  })();
+  </script>
+{% endblock %}

@@ -1,0 +1,992 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://luoah-ivy.github.io/XHwiki/Students/25/">
+      
+      
+        <link rel="prev" href="../../Home/introduction/">
+      
+      
+        <link rel="next" href="../29/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>[加密]金仕杰 - 星海wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="星海wiki" class="md-header__button md-logo" aria-label="星海wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m18.09 11.77 1.47 6.33L14 14.74 8.44 18.1l1.46-6.33L5 7.5l6.47-.54L14 1l2.53 5.96L23 7.5zM2 12.43c.19 0 .38-.06.55-.17l3.2-2.11-1.57-1.36-2.73 1.8c-.461.3-.589.91-.29 1.41.2.27.52.43.84.43m-.84 9.12c.2.29.52.45.84.45.19 0 .38-.05.55-.16l4.11-2.71.34-1.37.31-1.45-5.86 3.85c-.461.31-.589.93-.29 1.39m.29-6.17a1 1 0 0 0-.29 1.38c.2.3.52.45.84.45.19 0 .38-.05.55-.16l5.42-3.55.27-1.19-.92-.81z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            星海wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              [加密]金仕杰
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到夜间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到夜间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到明亮模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到明亮模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/luoah-ivy/XHwiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    luoah-ivy/XHwiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="星海wiki" class="md-nav__button md-logo" aria-label="星海wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m18.09 11.77 1.47 6.33L14 14.74 8.44 18.1l1.46-6.33L5 7.5l6.47-.54L14 1l2.53 5.96L23 7.5zM2 12.43c.19 0 .38-.06.55-.17l3.2-2.11-1.57-1.36-2.73 1.8c-.461.3-.589.91-.29 1.41.2.27.52.43.84.43m-.84 9.12c.2.29.52.45.84.45.19 0 .38-.05.55-.16l4.11-2.71.34-1.37.31-1.45-5.86 3.85c-.461.31-.589.93-.29 1.39m.29-6.17a1 1 0 0 0-.29 1.38c.2.3.52.45.84.45.19 0 .38-.05.55-.16l5.42-3.55.27-1.19-.92-.81z"/></svg>
+
+    </a>
+    星海wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/luoah-ivy/XHwiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    luoah-ivy/XHwiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    XHwiki
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    XHwiki
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Home/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    同学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    同学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [加密]金仕杰
+  
+
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--encrypted"></span>
+  
+
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [加密]金仕杰
+  
+
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--encrypted"></span>
+  
+
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简介
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="简介">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        你知道的太多了
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        班长
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        联系方式
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    卢润坤
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    梗
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    梗
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Meme/HDL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [加密]喝大了
+  
+
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--encrypted"></span>
+  
+
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Meme/SC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [加密]酸臭
+  
+
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--encrypted"></span>
+  
+
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Meme/DLL528/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [加密]5.28世界上会有一个非常非常幸福的女孩
+  
+
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--encrypted"></span>
+  
+
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Meme/Bro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [加密]好兄弟一辈子
+  
+
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--encrypted"></span>
+  
+
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Meme/LHRorLSZ/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [加密]老好人/老傻子
+  
+
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--encrypted"></span>
+  
+
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简介
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="简介">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        你知道的太多了
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        班长
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        联系方式
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div id="mkdocs-encrypted-content" style="display:none">zLd7G4N048zcGFgLoieRkA==;cu5qcfNXJsaduK2izKGXef9xrtZApfdA53J4fhJnQqzAvEFLXWychYkYFHGcBHsPOEJwrUi1cL5kMcDpjp8MuGi8zfcaEWX/MNRVLRslgZKVxJCAm1DmVyhfXbZu3bC1XF1L/N/jINh0IFvjwemCyvs/icSRe+ycjb59G0J9XZG4FFMMMMsWvNVz5vRiA5xp9Yc6eed2zTBJ/2HkfZWFCEJDPo5gBxc+ikXtCqhGGXYZZtG2VjELxg0emN49iA9Jv2rI/TZ9vziCqPdBcPM+yO93Pt14I4yKpPGh09BTlc6g2a/zy5jdArB/wG9VIkvVAEpW6VHrBF1zDAkaWXikh02hy+ll9zGOu0VDqYNy2IzeJrYuVwwiZQTkREhk+uXTZnOfUDYv7QS6+rZ7M6HeL+g9eUoX38E+jp7eYm1zj4ILhgARabJsX/Rr+dvCBtr5cMNTIwqCE4h8udTy94cwDAnaPbp2AdtoDPoAJV433TdsR5lPwS5W47Zp6X9pk1R4vFd1hSwyeVJY/G2zIDs88oGcwLWxSfWgym/RsRyfmYtOhkvh3XkFFvNoZ1pT4BSSusrNrSN7Tfde3gU+B6HvaeO2nFaEqC0AT62aTgWSs8YlsxDf7WoqGbNPTLP2DiHo0tdtg7c3zk2vmnWk7jwNXKdSC7jgAIiorCJmLz0ui6T85lAy+TRDKqiLQx/jxbR44jj5tK0cZSOTx+w/Ns05e54gj7NTNzVbmFgYvlbIdOBZnEVET2NSvZLsBK2tCEgAKeHVOJZzCXuS9N/7htuVwTeFclDfkAq2tIq74CF/n6vVh1DnN42py/iduZTW5punX48i7g5HJk4MHcvripYxm6jU0AB6xU+eLgZwnDSLip5tpDvVYXhsBER430UZ7j8IhRYxi+9uw0xABx3ZWRdu1Bzi6mcdkyc6ImHrm9GlDYnB5gJjBb+AgkDdKX3I4Rcc0IU6ploJJNbPjiNO8sv2NycHyBZD0dI1mtH703lI1XA2AgaagZLS/mtLDvuRujuyaJUFFfPb6PoW7d21K7nRZ2CHqFZ+m3fHl41oq/Rrcm2zNrlt+tAJeXnsL6WYSKtiCqiX9dPfBkOd7yxteeYBNgvjsib0F50nag9OZ2d2zFUsFtw/DLwXtLfJAEoxunMMFXSV7nD47MjjBqzthkrP53fRGOo8zWg+My8zZBADiP8sHW4yLtDJA9nT91mRVfQsFvQF6ssbLML716vyoiQlQjjzu/8IOFfMGWcUhdtg0RCQsjwaewNQPeyb4Wwh2shWYR6HRi7L8TnyYNIFjjebgBiAyhSzcY8/tSfu6mCNK+icS0f1FEl9/NHN8DImvSR9L6zP0aXkeop5snQExkD+IHr5RkWafaXTQiimcJc+XDFYAICVexbYhqSqOhM3mdqPy21RhxWFdOZhjyTgAga/dRiXFvkaNZM8ErnhhmRGU1txra2FpSyQtegYfEOhJlJlISQwlDR4Bz+IoZYUx9o368sym7JDHLh3zHdyccLIEKzF/aRyavy9VrKCzMGjdJe3xz8OX50MZG0MEunmeB52hDzWe60E8kPu/kfOQp345Mnfg61PFd8W09sBZoUGvD7mOYQkeanF8ldff/EKkFimm2MlI5TK1VSNShgkP+bNXzZ4VCe+1dpUb1KhuBqlbqu26Hb51DoZdnyYH90rtrSYojkosHVOI1f50qSpGhSbwLWmb1cDQ2oABKO+EowzwLt/o6KWohmh/xPrqJxJ7RjxuC8/pVFX/uwSclcF+SAP2k4j9MqL3ImgiLH2t8OxDPvo5+6X2mFb9utKpZubQc/lqP6+nIa9FjvgS98W6dHx+41J1+OyLCBIYJOgU2eYW+Nqu7Wd9BTPTd4w962/0RK5sJdTLpBkY1CJGkMSqtiLSHIvOAlnwoAY/oigvqE/2IdaeAXEQZu9IgRs+L1LoCADwEXWXoD7De6CWBKwAg+SEd1tHuT/CYQWnqePr3le0ykjqUKerg05i5Yq/qQCNtuHadZaToy7xrX4QBfE+fPT884z/5wL6FLQ4j2wsKshLl5ffE03lDaEOWYa0VP4tcteq2YXqIgn3LaL9FiFpmM26vxia9+CooEE5j7Hih5iJTOSCf9hzxNj+jME8g8CqsXePpsiRpKo6uBYTnUs4TLoNZo+q+NL96rrwjn2sFDvuEEoufQqoIFCgiovPWaG+9MdeeehGl2mFaOsrJMcuzMHL7OixZFWVcJ0Hx/4l6RpDRM6QkezEXsdLOPIpO/2CiKjtws+wBfQBEv5rl+N5tR5RZoe3KcuznfJrrQUnfJ7PtGy/z2NloHv5LR3udwbi/0/5E0HGYu2e3/DmL0bQ2ivkYBrD99jchuG5AHq6ytxb5/89ixM3voyXgO5O3gQL6l+sr0chlA4eaMZeZnwljYEY8NS7zYjsIyeDxFi+IdBOBsrfjZFFdmD4Ghm+FuMtVKQRhCezYpLRQR+IeslMVtKHkOXute0kUeyxyyiBsLlShoF475VFXvWBFpLacMQojXswz7dfbLMEwSjBawV8NvaCmRbvW6ZRxU+70CEv6XrONe7t55lfhMvAw2pluYaYd7pu+tRT0q8ZhaFByzroY0YQDuHlKMsvFnGbuh+LfYa96FXk8IE+neH9BZyPtO9zeIMXn+KtomMpbxOoZjRWAK+BGNvUaEHFa0bIhfRE2tPNIAENL1LPsEXdPRHSD0R6KgdYjJxTLII4p2gA3TBbJWSZpbHRzlz01ULSR4WsCL5SYaHjTlHu/lqCFm3SnHM9JyLsdau1hufkl2i5YjCRjvN25Z+ZjzEkl1AUWSVVcKONAyle7hqY5nMbU6eccqakt8SNp/s/2WWISu1S589WIZ4vU/uOWilrsIlQA+eKNxg2XDxPYp+rj3lVX+3vupAYSwYdPYuciYVTVYn21fICLpin5GQ36YsVaLp/nPIUphHduvCuWJT60a/wTy62oZBfOX61yidcV/gfXcnBz8d9PwB/NxRgZTOB0NYCdUFOzoo/495PyA9jXVqPoAcmCYPnU18zTC4BR32P2Rcz8wC2IwYeoO2syeuLuKhiwUZpoGtNaAczGLfPfKIeW/X5enVtNY1FTncQWfCQH0no0/Q1POaTtYY65OyKcRaoE7BZfXb4x+1KgJ6/oXXjrAojPAP8+s3Eyh2nnqAr8lrhRWf0ZfpI2KkFpepl7ukkw6RHzyq9ly0lFFx6LXKKnI/Zve8i8kJuXm8qVQ9qD3DPZ0Rk3RvpAqqdytTWmWD4Wkue6ooBKs/roiwXC7JSSoPN1otwBQTsL6Xj2nmP3xS9nScvW2elQF9N7fk1pO92W3nQYERssi+UQJglQt78HYNX0SAoK3b1nzRIaD2C9LksTz6Ij2at9qyNFCNLzMtOpJ8gHX/oI0JAQpdfqGNjeM8/skwWyPbFc7txggio/iKc8F+5C6PdGka/H6MHNA6Zm5UJkcZKwScnVFBsZWhi1d0rTUYHYBM/jaSbVv1C2hIwy9RLCxHbmmykhHzWHZVyodgls9yM0x68S6d1PKHAUoQ2kDLAgHW/JevAsvE7GXiLXvGmxvcTNJAOFHaI1Rm2yjY7D5qq+HRWi43r21Ohi+xwM4pwkPeyV+HpXTldXjW/GX9mIUqIUqIpDWGD4EJTFlcOW3j1mn1amhcVYm3K2CplUcboyvzqWgn0tYoZxnyYMdthlNbu/sXmcVsQVAw6shXMHHfA4Ckr3fTnV0Aq8xBQ7Mz8qnf/sX08JX5daIXP78sYjbwwK0FmkA+WYNmjxGNSDxfluoxkAAFu1oYTT0pvKHTHi8Q+CvzD32HmCyECb/I5IVe4g5Ewo37NClNQ5X7Idnj0BGKn7LR0WcHIA5f+nQFZB9SdndMufThEWQpHpfHC7Jncvo6XqZWsHuLzXcyipla898p5wgBJHgHGqYoa+ZrD5AqajU7fmarmaa4gZ4M0pnCL7agBEi+aN0uM618El7IQOWF9B3gd0d034Ol9TXO2uKXJFiKJGL3zeKGc1L1sNKS7MA4cz0CLbdBg35SYsQP/Qi0Sn1qHNeRqhheTzjIyLqgMdYreqKFah0dCOZeM7Y4dz0iW+dkmfb83i8iAPPs9ji6PZ6kBCEXdoz6ZXoYYFemVDjNleFaRAK6y0f3pFiqkXu6OcKAHmbqlJjYWkQ5cdiFrMw39FUnXQQtMDxbdvLxPd4TnE8Ctfl9qkqsgxszKR9mmNfQ/xeJ/8WC0lapTxVo9L+M3NK7FaxCuQLDUMjmSfHqOglMnd/Mjx/Mo/In3cIC6dJVMOtfSTZEshp6EqZ8dVNnHlBo9pfa+jUY7qWsF7DXkmmFwU09nK3y7/NpXEUB0RFt5Jcb9hbcwrlVwz+F5QCDHXl6bFrEQRRrFw4l9j8Lfl2c0pqB7CcFJjGBpM3QwrklLt76sRLoG/kkEoL/8Z60cW3PqP9IqA9Z4ku6/7rfsgvFkttnnD/+Zc8Bpfb+Ix7qi1tMDA2I1W1cmkq2u5tEs0whQ3HwqK1V6Vl7huS8yKzuABDeHLmNptqwBBT0jquHTyJ0ocNAOiNNi6K8L9eoXMmwD9RPG5HCTCCDlYfGbU74gOvTvkQnrTHlY2gvXkYRSC94Fe/Vo1cqrhYqdWrroF/dCr6mHNwcuSAzhPk3YX7WX/Dc0CdNXXytd0KFgHu80PJGsE5MV6iTLcb0T/AwLBqqVN/Uv7Levtu9Q7l0daGEbk13B/GRv4h8QfeqVTJEqqiSoxgYYNzbpwO5wLBBi0KQ5Wn70FX+48vssc0euiKYrtRQ6C+2943rRTW7e/OSt3GkhCJAhK/L3wo+8pDZzPD7FzxJ3zba9SmOsR4qkRHCzRHzvfV/vRP0AaDSzl2/1R9/vFinYVREzJ8yrXih0ELcK+N4f8oMkm832fQYGwRbrbyuQxxSxydOnn5RcgJulD7II/s3ipondeIbShayZosvQ94JSZ1eYhapw0ltm4O9R5y6FMIMaWQtTiEgNQO4AnznFQQJ9SQS2GWJh+3ilaiWwzwmqrFKGogv6RI8FKtE4SGkoPUYgkLAhqD89mQsgD4xtUpYcCn21On8XyPJW5OuMf2Me63MaVG2XDO5z/5Qpb74S0d8szpkrIjat9/VCA6UgFIYVVj6MtYDEWU1EdbOFqYay29g/8pjuM9gseUxyc6To7xcXWGTUq6xpBe3wwsv4Mbi4k03YFWxswrTZfn+Oz5uANVKy5jJTdjrugMkdeKgqbfTAG+vB2e7kWIUdyNB8Cjmhasg+VZVuKIO6BJM7xgYV3lIrR1LWSPrc4UVkdLy/tn2bZN5H4Gn0TJxokMQFKfBBTPR9spghhTUv1xSCa8QAWnxDUdESQ==</div>
+<div id="mkdocs-decrypted-content" style="display:none">
+    <form id="mkdocs-decrypt-form" class="md-content__inner md-typeset">
+        <h1>此内容已使用 AES 加密。</h1>
+        <p>因为部分同学恶意传播本网站或进行各种恶意活动，Luoah于2026.10.1正式加入AES加密系统。即2026.10.1日起，部分页面的访问针对部分没有权限的用户进行部分限制。注：Luoah不是日本人，“君の名は”指的是“你的名字”。</p>
+        <input class="md-input" type="text" id="mkdocs-content-user" placeholder="君の名は">
+        <input class="md-input" type="password" id="mkdocs-content-password" placeholder="请输入密码">
+        
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
+
+<script type="text/javascript">
+var encryptcontent_id = "encryptcontent_2";
+var encryptcontent_path = "XHwiki/Students/25/";
+var decryption_failure_message = "\u6b64\u7528\u6237\u4e0d\u5b58\u5728\u6216\u5bc6\u7801\u9519\u8bef\uff0c\u5982\u679c\u6b63\u786e\u586b\u5165\u4f9d\u7136\u65e0\u6cd5\u8bbf\u95ee\uff0c\u8bf7\u8054\u7cfb\u7ba1\u7406\u5458\u83b7\u53d6\u8bbf\u95ee\u6743\u9650\u3002";
+var encryptcontent_keystore = ["AG6tHM7cK1Q/5eci8EYtFw==;C/2d+Wtp2rlGFmEi3jZA4Nzi0SJ1fTXDl6KqajuCjB/9g8UyINJlt31uxhQbeur6q8Otl4rXs4hVTJtkWNk6x5373bCx7W3fNQ8knInYOCd5m0uKS5BcLLn9YP6a/lK6AhDH1Yiw7DzktI8/9xyIhxxiizmx+TkI8/6CkF8B6kGqxD/ZxATeOUTwRR+EyVEH8XJa7W68ncGuxZ7lGjmuy5uO+c0ZJBMap3ddMl2EtPVBCP0dJEI4aGyFijPbINOA;nRfvk/2rJyJ/l6w4ObhiTg==;D1lJJ13tUnYchtXq7fD7DMWQ/cY52WSAHnNvAm+NCI4=", "UvRgUKuicEqXbh64B+AxyQ==;dG9gA91FAPu26I/GH3K9ObohV5T4FllJRx98tQMQn7UsBMtTsmzrS2XG7TuehBPRuFj5d2e5b5Vfa8mB7E/lcfKqIJICQrjtCK/tSI959LDZ4V33iJmS8BtaED6nZjp2NuqCUth0yQgAi6I5TVf1FBmiGi8vYpjPBxe6WF1/Nbrw1La/1M9ULNkHkSJza/STefSdgBeoRK1Iig0QpmqV8PAQB6xnFidOYwRkXId11Hh5J4QYpQAOkUYtwzLmaz/8;MPn42QGNxz/2wzEfKgzW+Q==;jGl25bVBBBW96Qi9Te4V37Fnqchz/Eu4qB9vKrRIqRg=", "LzcTw4wJ3cae5sSa1Qe9kQ==;JmAcIsKp1oqbAk7apRsoNiMJyaWLkyn/lmcmKcldPQzlV2qn+xMSrmkrjCxW/4pFTOBrnv7FQ6Zc/TDh/9p/d5JDrCoGubJWdO1K3uTW4MF+CCx8OGeAGZWKVGVoDzrqoHIR61jQa4JU5rnr/2SkVU/VVRVuNF64tiVI8rs/jTpgiOtQo5W17Vs0SNTTwt2mrAbo0yZwBOSzHm2H8CZGxAsNEWmHPRt4gKPjz3SMt6TaZKgKCjGJRAms2/TWXCLf;LZ/F1dxxhCBld8pK9hU4ew==;hJg8YPfarcHLhphiH4AsDZ+aPDwpXIEHSPsEgRXBhuw="];
+var encryptcontent_obfuscate = 0;
+
+const encryptcontent_event = new Event("encryptcontent_event");
+var encryptcontent_done = false;
+</script>
+<script type="module">
+if (!window.hasOwnProperty("init_decryptor")) {
+    import("../../assets/javascripts/decrypt-contents.js");
+} else {
+    init_decryptor();
+}
+</script>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月3日 04:33:51 UTC">2026年10月3日</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
