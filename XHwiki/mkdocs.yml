@@ -26,10 +26,13 @@ plugins:
   - mkdocs-video:
       is_video: True
       video_autoplay: False
-  - git-revision-date-localized:
+  - document-dates:
       type: date
       locale: zh
-      fallback_to_build_date: true
+      position: bottom
+      exclude:
+        - index.md
+        - login.md
   - encryptcontent:
       password_inventory:
         admin_level:
@@ -39,7 +42,7 @@ plugins:
           Luoah: 'wohuainiandeshijueduichire'
           admin: '12345678'
           guest: '123456'
-      title_prefix: '[加密]'
+      title_prefix: ''
       summary: '此内容已使用 AES 加密。'
       placeholder: '请输入密码'
       placeholder_user: '君の名は'

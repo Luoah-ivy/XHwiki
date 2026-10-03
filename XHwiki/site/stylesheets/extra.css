@@ -4,3 +4,205 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+/* ============================================================
+   普通文档页 UI 优化 —— 与首页蓝白科技感保持一致
+   ============================================================ */
+
+:root {
+  --brand: #3f51b5;
+  --brand-light: #5c6bc0;
+  --brand-glow: rgba(63, 81, 181, 0.18);
+}
+
+/* ===== 1. 页面标题：左侧竖条 + 底部分隔线 ===== */
+.md-content__inner  h1:first-child {
+  position: relative;
+  padding-left: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--brand);
+  letter-spacing: 0.02em;
+}
+
+.md-content__inner  h1:first-child::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  bottom: 0.7em;
+  width: 4px;
+  background: var(--brand);
+  border-radius: 2px;
+}
+
+/* ===== 2. 二级标题：左侧小方块装饰 ===== */
+.md-content__inner h2 {
+  position: relative;
+  padding-left: 0.9rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.4rem;
+}
+
+.md-content__inner h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 8px;
+  height: 8px;
+  background: var(--brand);
+  border-radius: 2px;
+}
+
+/* ===== 3. 内容区卡片化：给正文加浅边框 ===== */
+.md-content__inner {
+  padding: 1.5rem 1.8rem !important;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  background: var(--md-default-bg-color);
+}
+
+/* 移动端减少内边距 */
+@media screen and (max-width: 76.1875em) {
+  .md-content__inner {
+    padding: 1rem 1.2rem !important;
+  }
+}
+
+/* ===== 4. 代码块：圆角 + 左侧品牌色光条 ===== */
+.md-typeset pre > code {
+  border-radius: 6px;
+  border-left: 3px solid var(--brand);
+}
+
+/* 行内代码 */
+.md-typeset code {
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  background: var(--brand-glow);
+  color: var(--brand);
+  font-weight: 500;
+}
+
+/* 深色模式下调整行内代码配色 */
+[data-md-color-scheme="slate"] .md-typeset code {
+  background: rgba(92, 107, 192, 0.18);
+  color: #9fa8da;
+}
+
+/* ===== 5. 表格：圆角 + 表头品牌色 ===== */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background: var(--brand-glow);
+}
+
+/* ===== 6. 引用块：淡天蓝色竖线 + 轻微阴影 ===== */
+.md-typeset blockquote {
+  border-left: 4px solid #94d0f3 !important;
+  background: transparent;
+  border-radius: 0 6px 6px 0;
+  padding: 0.1rem 0 0.1rem 0.6rem;
+  margin-left: 0;
+  margin-right: 0;
+  box-shadow: 0 2px 8px rgba(135, 206, 235, 0.15);
+  display: block;          /* 确保是块级元素，撑满父容器 */
+  width: 100%;             /* 强制撑满 */
+  max-width: 100%;         /* 去掉任何最大宽度限制 */
+  box-sizing: border-box;  /* padding 算在宽度内，不会溢出 */
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  box-shadow: 0 2px 8px rgba(135, 206, 235, 0.08);
+}
+
+/* ===== 7. 链接：悬停时轻微发光 ===== */
+.md-typeset a {
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.md-typeset a:hover {
+  color: var(--brand-light);
+  text-shadow: 0 0 8px var(--brand-glow);
+}
+
+/* ===== 8. 侧边栏当前项：左侧品牌色光条 ===== */
+.md-nav__link--active {
+  position: relative;
+  font-weight: 600;
+  color: var(--brand) !important;
+}
+
+.md-nav__link--active::before {
+  content: '';
+  position: absolute;
+  left: -0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  background: var(--brand);
+  border-radius: 2px;
+}
+
+/* ===== 9. 顶部导航栏：轻微阴影 ===== */
+.md-header {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== 10. 滚动条美化（Chrome/Edge） ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand);
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-light);
+}
+
+/*!* ===== 11. 页面底部的"上一页/下一页"按钮 ===== *!*/
+/*.md-footer__inner {*/
+/*  padding: 1rem 0;*/
+/*}*/
+
+/*.md-footer-nav__link {*/
+/*  border: 1px solid var(--md-default-fg-color--lightest);*/
+/*  border-radius: 8px;*/
+/*  padding: 0.8rem 1.2rem;*/
+/*  transition: border-color 0.25s ease, box-shadow 0.25s ease;*/
+/*}*/
+
+/*.md-footer-nav__link:hover {*/
+/*  border-color: var(--brand);*/
+/*  box-shadow: 0 4px 16px var(--brand-glow);*/
+/*}*/
+
+/* ===== 12. 加粗文字：品牌色 ===== */
+.md-typeset strong {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset strong {
+  color: #9fa8da;
+}

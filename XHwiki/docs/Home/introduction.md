@@ -106,7 +106,7 @@ XHwiki，即星海wiki，是由Luoah制作的wiki网站。
 
 > https://nflsoi.cc:20035/
 > 
-> https://www.weibo.com/1005055994952329?from=page_100505_profile&wvr=6&mod=data
+> https://weibo.com/u/5994952329
 
 附：
 
